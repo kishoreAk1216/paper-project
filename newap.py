@@ -72,9 +72,3 @@ if user_input:
     with st.chat_message("assistant"):
         st.markdown(gemini_response.text)
         
-from pyngrok import ngrok
-ngrok.set_auth_token("2g9FaFiDvJXXzZBrbGHWUwdZBc2_4DpLLpYhJGx6Lbd8t6EG8")
-
-
-public_url = ngrok.connect(port='8501')
-public_url
