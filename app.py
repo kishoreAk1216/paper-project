@@ -1,12 +1,6 @@
 import streamlit as st
-
-# Import the recommendation function
 from recommend_plants import recommend_plants
-
-# Streamlit UI
 st.title("Plant Companion Recommendation")
-
-# Input field for user's message
 user_input = st.text_input("Enter a plant name:")
 
 if user_input:
